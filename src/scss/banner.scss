@@ -1,0 +1,175 @@
+@import "./media.scss";
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#banner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 113px;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+
+  @include md {
+    padding-top: 55px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 90px 20px;
+
+    @include md {
+      grid-template-columns: 1fr;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+
+      .heading {
+        img {
+          width: 100%;
+        }
+      }
+
+      .para {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+        padding-left: 30px;
+@include md{
+  gap: 15px;
+}
+        p {
+          text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+          color: white;
+          font-size: 34px;
+          font-family: "font-1";
+          font-weight: 700;
+          letter-spacing: 4.2px;
+          line-height: 42.4px;
+
+          @include md {
+            letter-spacing: 1.2px;
+
+          }
+
+        }
+      }
+
+    }
+
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      @include md {
+        justify-content: flex-start;
+      }
+
+      img {
+        width: 484px;
+        object-fit: cover;
+
+        @include md {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .container-2 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .buy-content {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 35px;
+
+      @include md {
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .icons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        max-width: 400px;
+
+      }
+
+      .btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        transition: all 0.2s ease, visibility 0s;
+        border-radius: 50px;
+        border: 5px solid #3B3B3B;
+        background: repeat padding-box border-box 0%/auto scroll linear-gradient(180deg, #1CE0DF 0%, #BADA55 100%);
+
+        span {
+          color: #000000;
+          font-weight: 700;
+          font-size: 25px;
+          letter-spacing: 0.2em;
+          padding-left: 25px;
+
+          @include md {
+            font-size: 20px;
+          }
+        }
+
+        svg {
+          font-size: 70px;
+
+          @include md {
+            font-size: 65px;
+          }
+        }
+      }
+    }
+
+    p {
+      color: white;
+      font-size: 24px;
+      letter-spacing: 0.24px;
+      font-weight: 400;
+      text-decoration: underline !important;
+      word-wrap: break-word;
+
+    }
+
+  }
+}
