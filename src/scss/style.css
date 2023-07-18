@@ -39,9 +39,7 @@ body {
 }
 
 .App {
-  background: #000000e3;
   position: relative;
-  height: 100vh;
   margin: 0px;
   width: 100%;
 }
@@ -69,4 +67,11 @@ body {
 }
 #about .container .imges .box:hover .upper .btn {
   color: #26cfc8;
+}
+
+main {
+  background: #000000e3;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
 }
