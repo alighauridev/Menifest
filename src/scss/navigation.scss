@@ -20,7 +20,7 @@ header {
     .container {
       max-width: 1200px;
       margin: 0px auto;
-      border-bottom: 1px solid #40A6A0;
+      border-bottom: 2px solid #40A6A0;
       padding: 10px 0px;
 
 
@@ -29,6 +29,7 @@ header {
         justify-content: space-between;
         position: relative;
         align-items: center;
+        border-bottom: 1px solid #e2e2e2;
 
         @include flex {
           display: flex;
@@ -79,13 +80,14 @@ header {
                 transition: 0.3s all;
                 color: #094b4a;
                 text-transform: capitalize;
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 700;
-                font-family: monospace;
-                color: white;
+                font-family: 'Almarai', sans-serif;
+                color: #e2e2e2;
+                transition: all 0.6s ease-out;
 
                 &:hover {
-                  color: white;
+                  color: #26cfc8;
                 }
               }
             }
