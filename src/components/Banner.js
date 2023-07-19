@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Parallax } from "react-parallax";
 import "../scss/banner.scss";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import bannerImg from "../assests/7.jpg";
