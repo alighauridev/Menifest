@@ -1,175 +1,137 @@
 @import "./media.scss";
 
-
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-#banner {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding-top: 113px;
+.banner__wrapper {
   position: relative;
-  z-index: 1;
-  flex-direction: column;
 
-  @include md {
-    padding-top: 55px;
+  img {
+
+    width: 100%;
+
   }
 
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  video {
+    width: 100%;
+
+    height: 100%;
+
+    @include mobile {
+      margin-top: 72px;
+    }
+  }
+
+  padding-bottom: 30px;
+
+  #banner {
     align-items: center;
+    display: flex;
     justify-content: center;
-    z-index: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 90px 20px;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
 
     @include md {
-      grid-template-columns: 1fr;
+      position: unset;
     }
 
-    .content {
+    .container {
+      max-width: 1200px;
+      margin: auto;
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: center;
       justify-content: center;
+      row-gap: 30px;
+      padding: 90px 20px;
+      /* height: 100vh; */
+      width: 100%;
+      position: absolute;
+@include mobile{
+  position: inherit;
 
+}
       .heading {
-        img {
-          width: 100%;
-        }
-      }
-
-      .para {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: start;
-        gap: 40px;
-        padding-left: 30px;
-@include md{
-  gap: 15px;
-}
-        p {
-          text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+        justify-content: center;
+        width: 100%;
+        padding-top: 50px;
+        row-gap: 20px;
+        max-width: 600px;
+
+        h1 {
+          font-size: 60px;
+          font-weight: 400;
           color: white;
-          font-size: 34px;
-          font-family: "font-1";
-          font-weight: 700;
-          letter-spacing: 4.2px;
-          line-height: 42.4px;
+          font-family: 'Fjalla One', sans-serif;
+          text-align: center;
+        }
 
-          @include md {
-            letter-spacing: 1.2px;
-
-          }
-
+        p {
+          font-family: "Poppins", sans-serif;
+          font-size: 22px;
+          font-style: italic;
+          font-weight: 600;
+          height: auto;
+          letter-spacing: 2px;
+          overflow-wrap: break-word;
+          text-decoration: underline !important;
+          color: white;
+          word-break: break-all;
         }
       }
 
-    }
-
-    .img {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-
-      @include md {
-        justify-content: flex-start;
-      }
-
-      img {
-        width: 484px;
-        object-fit: cover;
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
 
         @include md {
-          width: 100%;
+          flex-direction: column;
+          gap: 0;
         }
-      }
-    }
-  }
 
-  .container-2 {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+        a {
+          color: black;
+          border-radius: 4px;
+          display: flex;
+          padding: 16px 32px;
+          position: relative;
+          width: 20%;
+          background-repeat: no-repeat;
+          align-items: center;
+          justify-content: center;
+          color: white;
 
-    .buy-content {
-      display: flex;
-      align-items: center;
-      justify-content: start;
-      gap: 35px;
+          user-select: none;
 
-      @include md {
-        flex-direction: column;
-        align-items: start;
-      }
-
-      .icons {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        max-width: 400px;
-
-      }
-
-      .btn {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-        transition: all 0.2s ease, visibility 0s;
-        border-radius: 50px;
-        border: 5px solid #3B3B3B;
-        background: repeat padding-box border-box 0%/auto scroll linear-gradient(180deg, #1CE0DF 0%, #BADA55 100%);
-
-        span {
-          color: #000000;
-          font-weight: 700;
-          font-size: 25px;
-          letter-spacing: 0.2em;
-          padding-left: 25px;
-
-          @include md {
-            font-size: 20px;
+          img {
+            width: auto !important;
           }
-        }
 
-        svg {
-          font-size: 70px;
+          span {
+            text-transform: uppercase;
+            font-family: 'Fjalla One', sans-serif;
+            letter-spacing: 2px;
+            font-size: 18px;
+            line-height: 16px;
+            position: absolute;
+            width: 200px;
+            text-align: center;
+            color: #28e9e0;
 
-          @include md {
-            font-size: 65px;
           }
         }
       }
     }
-
-    p {
-      color: white;
-      font-size: 24px;
-      letter-spacing: 0.24px;
-      font-weight: 400;
-      text-decoration: underline !important;
-      word-wrap: break-word;
-
-    }
-
   }
 }

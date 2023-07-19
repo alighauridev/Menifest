@@ -1,55 +1,62 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+import { Parallax } from "react-parallax";
 import "../scss/banner.scss";
-import img1 from "../assests/banner.png";
-import heading from "../assests/heading.webp";
-import i1 from "../assests/i.1.webp";
-import i2 from "../assests/i.2.webp";
-import i3 from "../assests/i.3.webp";
-import i4 from "../assests/i.4.webp";
-import i5 from "../assests/i.5.webp";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import bannerImg from "../assests/7.jpg";
+import btn1 from "../assests/btn-bac.svg";
+import video from "../assests/Video/file.mp4"
 const Banner = () => {
-  useEffect(() => {}, []);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (imageRef.current) {
+        const rect = imageRef.current.getBoundingClientRect();
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const scrollPercentage =
+            (window.innerHeight - rect.top) / window.innerHeight;
+          const rotationAngle = -90 + scrollPercentage * 90;
+
+          imageRef.current.style.transform = `rotateY(${rotationAngle}deg)`;
+          imageRef.current.style.transition = "transform 0.5s ease-out";
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <section id="banner">
-        <div className="container">
-          <div className="content">
+      <div className="banner__wrapper">
+        {/* <img src={bannerImg} style={{ width: "100%" }} alt="" /> */}
+        <section id="banner">
+
+        <video src={video}  muted autoPlay loop />          <div className="container">
             <div className="heading">
-              <img src={heading} alt="" />
+              <h1>PHANTOM LIBERTY COMING SEPTEMBER 26, 2023</h1>
             </div>
-            <div className="para">
-              <p>
-                Capoo, Made by a experienced team in Defi, is looking to take
-                its rightful place amongst other “Blue-Chip” Meme coins.
-              </p>
-              <p>
-                ​ Through aggressive shilling and marketing campaign & a strong
-                community, we’re going to capoo our way to the top.
-              </p>
-            </div>
-          </div>
-          <div className="img">
-            <img src={img1} alt="" />
-          </div>
-        </div>
-        <div className="container-2">
-          <div className="buy-content">
-            <div className="icons">
-              <img src={i1} alt="" />
-              <img src={i2} alt="" />
-              <img src={i3} alt="" />
-              <img src={i4} alt="" />
-              <img src={i5} alt="" />
-            </div>
-            <div className="btn">
-              <span>BUY NOW</span>
-              <MdKeyboardArrowRight />
+            <div className="content">
+              <a href="#" target="blank_">
+                <img src={btn1} alt="" />
+                <span>PRE-ORDER NOW</span>
+              </a>
+              <a href="#" target="blank_">
+                <img src={btn1} alt="" />
+
+                <span> WATCH TRAILER</span>
+              </a>
             </div>
           </div>
-          <p>0xb4e58335d52Fea54D408E7E44eD77B791B0BC470</p>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 };

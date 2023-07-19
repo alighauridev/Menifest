@@ -1,0 +1,229 @@
+@import "./variable.scss";
+@import "./media.scss";
+
+#bittwo {
+  background: #ffb32c;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    padding: 90px 20px;
+    margin: auto;
+    width: 100%;
+    grid-gap: 40px;
+
+    @include md {
+      grid-template-columns: 1fr;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      row-gap: 30px;
+
+      .heading {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+
+        h1 {
+          font-family: "roboto-light";
+          font-size: 40px;
+          font-weight: 300;
+          line-height: 50px;
+          text-transform: none;
+          color: #000000;
+          text-align: start;
+          width: 100%;
+        }
+
+        h2 {
+          font-family: "raboto";
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 50px;
+          text-transform: none;
+          color: #000000;
+          text-align: start;
+          width: 100%;
+        }
+      }
+      .grid__ {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 30px 30px;
+          gap: 30px;
+          background-color: #f2f2f2;
+
+          @include mobile {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 30px 30px;
+          }
+
+          .box-number {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            margin-top: 30px;
+            height: 100%;
+
+            @include mobile {
+              margin-top: 0px;
+              height: auto;
+            }
+
+            span {
+              background-color: #ffc40c;
+              height: 50px;
+              width: 50px;
+              border-radius: 100%;
+              font-size: 25px;
+              font-family: "raboto";
+              font-weight: 500;
+              line-height: 50px;
+              text-transform: none;
+              color: #000000;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .box-content {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            row-gap: 20px;
+
+            @include mobile {
+              align-items: center;
+            }
+
+            h4 {
+              font-family: "raboto";
+              font-size: 25px;
+              font-weight: 600;
+              line-height: 50px;
+              text-transform: none;
+              color: #000000;
+            }
+
+            p {
+              font-family: "open";
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 26px;
+              text-transform: none;
+              color: #999;
+
+              @include mobile {
+                text-align: center;
+              }
+            }
+          }
+
+          .icons {
+            svg {
+              display: flex;
+              align-items: center;
+              font-size: 60px;
+              justify-content: center;
+              fill: #3c3535;
+
+              @include mobile {
+                font-size: 60px;
+              }
+            }
+
+            .down {
+              display: none;
+            }
+
+            @include mobile {
+              .down {
+                display: block;
+              }
+
+              .right {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .btns {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap: 40px;
+          width: 100%;
+
+          @include mobile {
+            align-items: start;
+            grid-area: 20px;
+            flex-direction: column;
+          }
+
+          a {
+            background-color: #ffc40c;
+            font-family: "roboto-light";
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+            color: black;
+            font-weight: 300;
+            font-size: 18px;
+            border-color: transparent;
+            padding: 16px 28px;
+          }
+
+          .des {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+              font-family: "open";
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 26px;
+              text-transform: none;
+              color: #999;
+              display: flex;
+              gap: 5px;
+
+              strong {
+                font-weight: bold;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      @include md {
+        justify-content: start;
+      }
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}

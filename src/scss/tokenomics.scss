@@ -1,101 +1,99 @@
+@import "./variable.scss";
 @import "./media.scss";
 
 #tokenomics {
+    position: relative;
+    z-index: 1;
+    background-color: transparent !important;
+
     .container {
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-        padding: 90px 20px;
+        z-index: 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 0px;
+        grid-gap: 50px;
+        width: 100%;
+        padding: 90px 0px;
 
-        .heading {
+        @include md {
+            grid-template-columns: 1fr;
+        }
+
+        .img1 {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 30px 0px;
+            justify-content: start;
+            height: 100%;
+            width: 100%;
 
             img {
                 width: 100%;
-                max-width: 700px;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
         .content {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: start;
             justify-content: center;
-            gap: 40px;
+            gap: 20px;
+            padding: 20px;
+            max-width: 500px;
 
-            @include md {
+            .heading {
+                display: flex;
+                align-items: start;
                 flex-direction: column;
-                row-gap: 60px;
+                justify-content: center;
+                gap: 10px;
+
+                span {
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: rgb(255, 255, 255);
+                    font-family: "Poppins", sans-serif;
+                }
+
+                h1 {
+                    font-size: 44px;
+                    font-weight: 400;
+                    color: white;
+                    font-family: 'Fjalla One', sans-serif;
+                }
+
+
+
             }
 
-            .box {
+            p {
+                font-size: 24px;
+                font-weight: 300;
+                font-family: "Poppins", sans-serif;
+                color: white;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                height: 248px;
+                align-items: start;
+                justify-content: center;
 
-                .title {
-                    font-size: 51px;
-                    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
-                    color: white;
-                    width: 100%;
-                    text-align: center;
-                    font-family: "font-1";
-                }
+                word-break: break-all;
 
-                ul {
-                    position: relative;
-
-                    p {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img {
-                            position: absolute;
-                            bottom: 70px;
-                        }
-                    }
-
-                    div {
-                        padding: 10px 50px;
-                        background-color: rgb(255, 219, 191);
-                        border-radius: 50px;
-                        display: flex;
-                        height: 80px;
-                        align-items: start;
-                        justify-content: center;
-                        flex-direction: column;
-                        width: 325px !important;
-
-                        @include md {
-                            height: auto;
-                            width:100% !important;
-                            max-width:225 !important;
-                        }
-
-
-                        li {
-                            color: #343030;
-                            font-size: 23px;
-                            list-style: disc !important;
-                            font-weight: 600;
-                            margin: 0 !important;
-                            font-family: 'font-3';
-
-
-                            &::marker {
-                      color: black;
-                            }
-                        }
-                    }
+                span {
+                    font-weight: 600;
+                    font-size: 23px;
+                    font-weight: 400;
+                    font-family: "Poppins", sans-serif;
+                    color: rgb(255, 255, 255);
                 }
             }
+
+
         }
     }
 }

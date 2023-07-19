@@ -32,9 +32,7 @@
   text-decoration: none;
   color: #0f0f0f;
 }
-h1,
-h2 {
-}
+
 
 body::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -86,6 +84,9 @@ html {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
 }
+button {
+  border: 0;
+}
 button.owl-prev {
   justify-content: center;
 }
@@ -120,8 +121,7 @@ button.owl-next span {
   background: none;
   border: 1px solid black;
 }
-.bottomm {
-}
+
 
 .owl-theme .owl-dots .owl-dot {
   width: 30px;
