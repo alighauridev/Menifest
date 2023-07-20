@@ -3,7 +3,7 @@
 
 #footer {
   position: relative;
-  background-color: #fcee0a;
+  background-color: #fc012a;
 
   .container {
     max-width: 1200px;
@@ -17,20 +17,20 @@
 
     p {
       font-size: 18px;
-    font-weight: 300;
-    font-family:'blender';
-    color: #000;
-    text-align: center;
+      font-weight: 300;
+      font-family: 'blender';
+      color: #e6e9e9;
+      text-align: center;
     }
 
     span {
-      color: #000;
+      color: #e6e9e9;
 
       font-size: 16px;
       font-weight: 700;
       position: relative;
       text-decoration: none;
-      font-family:'blender';
+      font-family: 'blender';
       letter-spacing: 2px;
     }
 
@@ -46,7 +46,7 @@
       }
 
       h2 {
-        color: #000;
+        color: #e6e9e9;
         font-weight: 700;
         position: relative;
         font-family: 'blender';
@@ -65,7 +65,7 @@
         }
 
         a {
-          color: #000;
+          color: #e6e9e9;
           font-family: BlenderProBold, sans-serif;
           font-size: 16px;
           font-weight: 700;
@@ -78,6 +78,7 @@
           img {
             width: 30px;
             height: 40px;
+            filter: invert(1);
           }
         }
 
@@ -90,9 +91,10 @@
       ul {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         gap: 30px;
         flex-wrap: wrap;
+        list-style: none;
 
         @include md {
           justify-content: center;
@@ -101,7 +103,7 @@
         list-style: none;
 
         a {
-          color: #000;
+          color: #e6e9e9;
           font-weight: 700;
           position: relative;
           font-family: 'blender';
