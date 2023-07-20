@@ -1,36 +1,42 @@
 import React, { useState } from "react";
-import Loader from "../components/Loader";
+
 import Navigation from "../components/Navigation";
 import Banner from "../components/Banner";
 
-import Faq from "../components/Faq";
 import Footer from "../components/Footer";
-import Roadmap from "../components/Roadmap";
-import About from "../components/About";
-import RoadMapOne from "../components/RoadMapOne";
-import Tokenomics from "../components/Tokenomics";
-import Join from "../components/Join";
 
+import About from "../components/About";
+
+import MoreInfo from "../components/MoreInfo";
+import "../scss/home.css";
+
+import Parteners from "../components/Parteners";
+
+import Tokenomics from "../components/Tokenomics";
+import Mission from "../components/Mission";
 const Home = () => {
-  let [loading, setLoading] = useState(false);
+  let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("#ffb800");
   return (
     <>
-      {loading ? (
-        <Loader setLoading={setLoading} />
-      ) : (
-        <>
-          <main>
+      <>
+        <main>
+          <div className="bac-main">
             <Navigation />
-            {/* <Banner /> */}
-            <About />
-            {/* <RoadMapOne />
-            <Tokenomics/>
-            <Join/>
-            <Footer /> */}
-          </main>
-        </>
-      )}
+          </div>
+          <Banner />
+          <MoreInfo />
+          <Mission />
+          <About />
+
+          {/* <MoreInfo />
+          <Tokenomics />
+
+          <Parteners />
+           */}
+          <Footer />
+        </main>
+      </>
     </>
   );
 };

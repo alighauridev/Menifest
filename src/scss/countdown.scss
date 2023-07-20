@@ -4,17 +4,14 @@
 .counter {
   overflow: hidden;
   padding: 0px 0 50px;
-  // background: #4a0000d4;
   display: grid;
   place-content: center;
-  /* z-index: 0; */
   position: relative;
   @include md {
     padding: 30px 0;
   }
 
   &::before {
-    // content: "";
     background: url(../../public/images/web.png) no-repeat center center fixed;
     background-size: cover;
     z-index: -1;

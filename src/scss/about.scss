@@ -3,7 +3,23 @@
 
 #about {
   position: relative;
+  margin-top: 65px;
   z-index: 1;
+  background-color: #fc012a;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background: url(http://localhost:3001/static/media/layer.18e21da3a7bc5cd77d51.svg);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: -48px;
+  }
 
   .container {
     max-width: 1200px;
@@ -13,8 +29,7 @@
     align-items: center;
     justify-content: center;
     z-index: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
     padding: 90px 20px;
 
     @include md {
@@ -22,11 +37,51 @@
       row-gap: 30px;
     }
 
+    .layer {
+      background-image: linear-gradient(90deg, #e6e9e9 28px, #fc012a 0, #fc012a calc(50% - 14px), #e6e9e9 calc(50% - 14px), #e6e9e9 calc(50% + 14px), #fc012a calc(50% + 14px), #fc012a calc(100% - 28px), #e6e9e9 calc(100% - 28px), #e6e9e9), linear-gradient(90deg, #e6e9e9 2px, #fc012a 0, #fc012a calc(50% - 1px), #e6e9e9 calc(50% - 1px), #e6e9e9 calc(50% + 1px), #fc012a calc(50% + 1px), #fc012a calc(100% - 2px), #e6e9e9 calc(100% - 2px), #e6e9e9);
+      background-repeat: no-repeat;
+      background-size: 100% 2px, 100% 28px;
+      height: 28px;
+      width: 100%;
+    }
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 20px;
+      padding: 30px 0px 50px;
+
+      h1 {
+        color: #e6e9e9;
+        font-family: "refinery";
+
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: #e6e9e9;
+        font-family: 'blender';
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        text-align: center;
+      }
+    }
+
     .content {
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: center;
+      row-gap: 30px;
 
       .heading {
         img {
@@ -56,71 +111,109 @@
           }
         }
       }
-    }
 
-    .imges {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      gap: 20px 6px;
-
-      @include md {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      @include mobile {
+      .imges {
         display: flex;
-        flex-direction: column;
-      }
-
-
-
-      img {
-        max-width: 274px;
-        object-fit: cover;
-        width: 300px;
-        height: 350px;
-        filter: grayscale(1);
-        transition: all 0.6s ease-in-out;
-
-
-
-        @include sm {
-          width: 100%;
-        }
-      }
-
-      .box {
+        align-items: center;
+        justify-content: center;
         position: relative;
-        overflow: hidden;
-        transition: all 0.6s ease-out;
+        gap: 20px 0px;
 
-        cursor: pointer;
+        @include md {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
 
-        .upper {
-          position: absolute;
-          top: 0px;
-          width: 100%;
-          height: 100%;
+        @include mobile {
           display: flex;
-          align-items: end;
-          justify-content: center;
+          flex-direction: column;
+        }
+
+
+
+        img {
+          max-width: 274px;
+          object-fit: cover;
+          width: 300px;
+          height: 350px;
+          filter: grayscale(1);
           transition: all 0.6s ease-in-out;
+          transform: scale(1);
 
-          .btn {
-            padding: 6px 8px;
-            background-color: black;
-            color: white;
-            transition: all 0.6s ease-in-out;
 
-            border-radius: 2px;
+          @include sm {
+            width: 100%;
           }
         }
-      }
 
+        .box {
+          position: relative;
+          display: flex;
+          overflow: hidden;
+          transition: all 0.6s ease-out;
+          cursor: pointer;
+          border-right: 4px solid white;
+          border-left: 4px solid white;
+          border-top: 8px solid white;
+          border-bottom: 8px solid white;
+          align-items: center;
+          justify-content: center;
+
+          .upper {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            transition: all 0.8s ease-in-out;
+
+            .btn {
+              color: black;
+              border-radius: 4px;
+              display: flex;
+              padding: 16px 32px;
+              position: relative;
+              width: 20%;
+              background-repeat: no-repeat;
+              align-items: center;
+              justify-content: center;
+
+              position: relative;
+              color: white;
+
+              user-select: none;
+
+              img {
+                width: auto !important;
+                height: 100%;
+                filter: inherit !important;
+                max-width: 220px;
+                transform: none !important;
+              }
+
+              span {
+                text-transform: uppercase;
+                font-family: "blender";
+                letter-spacing: 2px;
+                font-size: 18px;
+                line-height: 16px;
+                position: absolute;
+                width: 200px;
+                text-align: center;
+                color: #28e9e0;
+                font-weight: 700;
+
+              }
+            }
+          }
+        }
+
+      }
     }
+
+
   }
 
   .model {
@@ -131,7 +224,8 @@
     top: 0px;
     height: 100vh;
     width: 100%;
-    background: #00000063;
+    background: rgba(28, 0, 0, 0.439);
+    transition: all 0.8s ease-out;
 
     .cross {
       img {
@@ -143,23 +237,24 @@
         top: 50px;
 
         @include md {
-          top: 35px;
+          top: 65px;
           right: 35px;
         }
 
         @include mobile {
-          top: 90px;
+          top: 130px;
+          right: 12px;
         }
       }
 
     }
 
     .center {
-      padding: 40px;
+      padding: 40px 20px;
 
       img {
         width: 100%;
-        height: 400px;
+        height: 500px;
         object-fit: contain;
       }
     }

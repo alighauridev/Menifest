@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=Fredoka+One&family=Inter:wght@300;400;500;600;700;800;900&family=Jost:wght@200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&family=Merienda:wght@400;600;800&family=Oswald:wght@200;300;400;500;600;700&family=Readex+Pro:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Chela+One&family=Fjalla+One&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500&family=Slackey&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Coiny&family=Josefin+Sans:wght@300;400;500;600;700&family=Kanit:wght@400;500;600&family=Koulen&family=Libre+Bodoni:wght@400;500;600;700&family=Luckiest+Guy&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Spectral:wght@200;300;400;500;600;700;800&family=Tapestry&family=VT323&display=swap");
 @font-face {
   font-family: "font-1";
@@ -9,6 +10,18 @@
 @font-face {
   font-family: "font-2";
   src: url("./font/Jockey_One/JockeyOne-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "refinery";
+  src: url("./font/Refinery/Refinery\ 15\ Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "blender";
+  src: url("./font/Blender-Pro-Book/Blender-Pro-Book.otf");
   font-style: normal;
   font-weight: normal;
 }
@@ -31,36 +44,41 @@
 }
 body {
   overflow-x: hidden;
-
+  height: 100%;
   /* background-color: black; */
-
   position: relative;
 }
 
 .App {
-  background: #000000e3;
   position: relative;
+  margin: 0px;
+  width: 100%;
 }
 .App::before {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("http://localhost:3001/static/media/p%20%20(1).36cfe7b71fba8f30e0a6.jpg");
+  background: url("../assests/bac-main.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   z-index: -1;
-  /* opacity: 0.6; */
-  background-attachment: fixed;
-  filter: grayscale(1);
 }
 
-#about .container .imges .box:hover img, .upper .btn {
+#about .container .imges .box:hover img,
+.upper .btn {
   filter: grayscale(0);
-  color: #40A6A0;
+  color: #40a6a0;
+  transform: scale(1.1);
 }
 #about .container .imges .box:hover .upper .btn {
   color: #26cfc8;
+}
+
+main {
+  background: #040404;
+  position: relative;
+  width: 100%;
 }

@@ -6,7 +6,6 @@ import { FaDiscord } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import logo1 from "../assests/main-logo.png";
-import logo2 from "../assests/logo-2.webp";
 import { LinkOff, LinkOffOutlined, LinkRounded } from "@material-ui/icons";
 const Navigation = () => {
   const [navToggler, setNavToggler] = useState(false);
@@ -40,7 +39,7 @@ const Navigation = () => {
                   <img src={logo1} alt="" />
                 </a>
               </div>
-              <nav>
+              <nav style={navToggler ? { display: "flex" } : null}>
                 <ul className={navToggler ? "ul__active" : ""}>
                   {nav.map((ite, ind) => {
                     return (
@@ -54,8 +53,8 @@ const Navigation = () => {
                       </li>
                     );
                   })}
-                  <li></li>
                 </ul>
+                <div className="btn">BUY NOW</div>
               </nav>
               <div className="nav__btns">
                 <i onClick={() => barBtn()} className="bars">
