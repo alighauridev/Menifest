@@ -17,21 +17,20 @@
 
     p {
       font-size: 18px;
-      font-weight: 300;
-      font-family: "Poppins", sans-serif;
-
-      color: #000;
-      text-align: center;
+    font-weight: 300;
+    font-family:'blender';
+    color: #000;
+    text-align: center;
     }
 
     span {
       color: #000;
-      font-family: BlenderProBold, sans-serif;
+
       font-size: 16px;
       font-weight: 700;
       position: relative;
       text-decoration: none;
-      font-family: "Fjalla One", sans-serif;
+      font-family:'blender';
       letter-spacing: 2px;
     }
 
@@ -47,10 +46,11 @@
       }
 
       h2 {
-        font-size: 16px;
+        color: #000;
         font-weight: 700;
-        font-family: "Poppins", sans-serif;
-        color: black;
+        position: relative;
+        font-family: 'blender';
+        font-size: 18px;
       }
 
       ul {
@@ -102,14 +102,11 @@
 
         a {
           color: #000;
-          font-family: BlenderProBold, sans-serif;
-          font-size: 16px;
           font-weight: 700;
-
           position: relative;
-          text-decoration: none;
-          font-family: "Fjalla One", sans-serif;
-          letter-spacing: 2px;
+          font-family: 'blender';
+
+          font-size: 18px;
         }
 
       }

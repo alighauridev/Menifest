@@ -11,6 +11,16 @@
   position: relative;
   z-index: 1;
   background-color: transparent !important;
+  padding: 0 20px 40px 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-position: 20px calc(100% - 20px);
+  background-repeat: repeat-x;
+
+  background-position: bottom center;
+  background-image: url('../assests/bac-main.png');
 
   .container {
     display: flex;
@@ -19,72 +29,44 @@
     justify-content: center;
     z-index: 4;
     display: grid;
-    grid-template-columns: 1fr;
     padding: 0px 0px;
-    grid-gap: 50px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     width: 100%;
-    padding: 90px 20px;
+    padding: 50px 20px;
+    row-gap: 20px;
+    align-items: center;
+    background: linear-gradient(90deg, #28e9e0 2px, transparent 0) 0 0, linear-gradient(90deg, #28e9e0 2px, transparent 0) 0 100%, linear-gradient(270deg, #28e9e0 2px, transparent 0) 100% 0, linear-gradient(270deg, #28e9e0 2px, transparent 0) 100% 100%, linear-gradient(180deg, #28e9e0 2px, transparent 0) 0 0, linear-gradient(180deg, #28e9e0 2px, transparent 0) 100% 0, linear-gradient(0deg, #28e9e0 2px, transparent 0) 0 100%, linear-gradient(0deg, #28e9e0 2px, transparent 0) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    border-bottom: 2px solid #28e9e01a;
+    border-top: 2px solid #28e9e01a;
 
-    .img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 100%;
+    .heading {
+      h1 {
+        color: #28e9e0;
+        font-family: "refinery";
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: center;
+        text-transform: uppercase;
       }
     }
 
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      gap: 20px;
-      margin: auto;
-      max-width: 550px;
-      padding: 20px;
-@include md {
-  padding: 0px;
-}
-      .heading {
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
+    .para {
+      max-width: 700px;
 
-        h1 {
-          font-size: 32px;
-          font-weight: 400;
-          color: white;
-          font-family: "Fjalla One", sans-serif;
-        }
-      }
-
-      .para {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 20px;
-
-        p {
-          font-size: 18px;
-          font-weight: 300;
-          font-family: "Poppins", sans-serif;
-          color: rgb(255, 255, 255);
-
-          b {
-            font-size: 18px;
-            font-weight: 400;
-            font-family: "Poppins", sans-serif;
-            color: rgb(255, 255, 255);
-          }
-        }
+      p {
+        font-family: 'blender';
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        color: white;
+        text-align: center;
       }
     }
   }

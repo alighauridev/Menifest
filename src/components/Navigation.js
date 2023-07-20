@@ -39,10 +39,7 @@ const Navigation = () => {
                   <img src={logo1} alt="" />
                 </a>
               </div>
-              <nav
-            style={navToggler ? { display: "flex"} : null}
-              >
-                ;
+              <nav style={navToggler ? { display: "flex" } : null}>
                 <ul className={navToggler ? "ul__active" : ""}>
                   {nav.map((ite, ind) => {
                     return (

@@ -13,6 +13,7 @@ import "../scss/home.css";
 import Parteners from "../components/Parteners";
 
 import Tokenomics from "../components/Tokenomics";
+import Mission from "../components/Mission";
 const Home = () => {
   let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("#ffb800");
@@ -24,6 +25,8 @@ const Home = () => {
             <Navigation />
           </div>
           <Banner />
+          <MoreInfo />
+          <Mission />
           <About />
 
           {/* <MoreInfo />

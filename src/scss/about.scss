@@ -5,7 +5,7 @@
   position: relative;
   margin-top: 65px;
   z-index: 1;
-  background-color: #fcee0a;
+  background-color: #fc012a;
 
   &::before {
     content: "";
@@ -38,7 +38,7 @@
     }
 
     .layer {
-      background-image: linear-gradient(90deg, #000 28px, #fcee0a 0, #fcee0a calc(50% - 14px), #000 calc(50% - 14px), #000 calc(50% + 14px), #fcee0a calc(50% + 14px), #fcee0a calc(100% - 28px), #000 calc(100% - 28px), #000), linear-gradient(90deg, #000 2px, #fcee0a 0, #fcee0a calc(50% - 1px), #000 calc(50% - 1px), #000 calc(50% + 1px), #fcee0a calc(50% + 1px), #fcee0a calc(100% - 2px), #000 calc(100% - 2px), #000);
+      background-image: linear-gradient(90deg, #e6e9e9 28px, #fc012a 0, #fc012a calc(50% - 14px), #e6e9e9 calc(50% - 14px), #e6e9e9 calc(50% + 14px), #fc012a calc(50% + 14px), #fc012a calc(100% - 28px), #e6e9e9 calc(100% - 28px), #e6e9e9), linear-gradient(90deg, #e6e9e9 2px, #fc012a 0, #fc012a calc(50% - 1px), #e6e9e9 calc(50% - 1px), #e6e9e9 calc(50% + 1px), #fc012a calc(50% + 1px), #fc012a calc(100% - 2px), #e6e9e9 calc(100% - 2px), #e6e9e9);
       background-repeat: no-repeat;
       background-size: 100% 2px, 100% 28px;
       height: 28px;
@@ -54,8 +54,9 @@
       padding: 30px 0px 50px;
 
       h1 {
-        color: #000;
-        font-family: BlenderProBold, sans-serif;
+        color: #e6e9e9;
+        font-family: "refinery";
+
         font-size: 44px;
         font-style: normal;
         font-weight: 700;
@@ -65,14 +66,13 @@
       }
 
       p {
-        color: #000;
-        font-family: BlenderProBold, sans-serif;
+        color: #e6e9e9;
+        font-family: 'blender';
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
-        line-height: 100%;
+        line-height: 120%;
         text-align: center;
-        text-transform: uppercase;
       }
     }
 
@@ -189,7 +189,7 @@
 
               span {
                 text-transform: uppercase;
-                font-family: 'Fjalla One', sans-serif;
+                font-family: "blender";
                 letter-spacing: 2px;
                 font-size: 18px;
                 line-height: 16px;
@@ -217,7 +217,7 @@
     top: 0px;
     height: 100vh;
     width: 100%;
-    background: #00000063;
+    background: #e6e9e900063;
     transition: all 0.8s ease-out;
 
     .cross {
