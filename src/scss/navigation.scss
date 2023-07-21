@@ -1,7 +1,6 @@
 @import "./variable.scss";
 @import "./media.scss";
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -26,7 +25,6 @@ header {
       margin: 0px auto;
       padding: 10px 20px;
 
-
       .bars {
         position: relative;
         z-index: 11;
@@ -34,7 +32,6 @@ header {
         img {
           width: 45px !important;
         }
-
       }
 
       .nav__grid {
@@ -61,7 +58,6 @@ header {
           }
 
           img {
-
             margin-left: -6px;
 
             max-width: 200px;
@@ -80,6 +76,24 @@ header {
           justify-content: end;
           height: 40px;
           overflow: hidden;
+          clip-path: polygon(
+            13.33333px 0,
+            100% 0,
+            100% 25px,
+            calc(100% - 15px) 40px,
+            calc(100% - 15px) 2000%,
+            0 2000%,
+            0 13.33333px
+          );
+          padding-left: 20px;
+          &::before {
+            content: "";
+            left: 0;
+            position: absolute;
+            top: 0;
+            border-right: 13px solid transparent;
+            border-top: 13px solid #00f0ff;
+          }
 
           @include mobile {
             position: fixed;
@@ -106,11 +120,10 @@ header {
             justify-content: center;
             padding: 6px 15px;
             font-size: 18px;
-            font-family: 'blender';
-            font-weight: 700;
+            font-family: "blender";
+            font-weight: 400;
             cursor: pointer;
             width: 170px;
-
             @include mobile {
               height: auto;
             }
@@ -142,18 +155,18 @@ header {
               padding: 30px 0px;
             }
 
-            >li {
+            > li {
               padding: 11px 15px;
               display: flex;
               position: relative;
               transition: 0.3s all;
               font-size: 18px;
-              font-family: 'blender';
+              font-family: "blender";
 
               align-items: center;
               justify-content: center;
               width: 100%;
-            font-family: 'blender ' !important;
+              font-family: "blender " !important;
 
               cursor: pointer;
 
@@ -165,24 +178,21 @@ header {
                 color: black;
               }
 
-              >a {
+              > a {
                 transition: 0.3s all;
                 color: #094b4a;
                 text-transform: capitalize;
                 font-size: 18px;
                 font-weight: 400;
-                font-family: 'blender';
+                font-family: "blender";
                 color: #e2e2e2;
                 transition: all 0.6s ease-out;
-@include mobile {
-  width: 100%;
-  text-align: center;
-}
-
+                @include mobile {
+                  width: 100%;
+                  text-align: center;
+                }
               }
             }
-
-
           }
         }
 
@@ -204,9 +214,9 @@ header {
           .btn {
             padding: 8px 22px;
             border-radius: 50px;
-            outline: 2px solid #3B3B3B;
+            outline: 2px solid #3b3b3b;
             cursor: pointer;
-            background: #EADE69;
+            background: #eade69;
             transition: all 0.3s ease-in-out;
             color: #000000;
 
@@ -230,7 +240,6 @@ header {
               display: initial;
               font-size: 21px;
               font-family: "font-2";
-
             }
           }
 
@@ -317,7 +326,7 @@ header {
     right: 1.7%;
   }
 
-  >i {
+  > i {
     width: 50px;
     background: white;
     height: 50px;
@@ -345,15 +354,13 @@ header {
   header {
     .nav__grid {
       .nav__btns {
-        >i {
+        > i {
           display: none;
         }
       }
     }
   }
 }
-
-
 
 // @media (min-width: 0) and (max-width: 992px) {
 //   header {

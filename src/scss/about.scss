@@ -3,24 +3,33 @@
 
 #about {
   position: relative;
-  margin-top: 65px;
-  z-index: 1;
-  background-color: #fc012a;
-
+  background-image: url("../assests/bac-main.png"),
+    url("../assests/noise-pattern-90c709f6.png");
+  background-position: top 40px center, top;
+  background-repeat: repeat-x, repeat;
+  background: #e6e9e9;
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 7%;
-    background: url(http://localhost:3001/static/media/layer.18e21da3a7bc5cd77d51.svg);
-    background-size: inherit;
-    background-repeat: no-repeat;
-    z-index: -1;
+    background-image: url("https://www.cyberpunk.net/build/images/razor-18e21da3.svg");
     top: -48px;
+    content: "";
+    height: 48px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    filter: grayscale(1) brightness(1.034);
   }
-
+  &::after {
+    background-image: url("https://www.cyberpunk.net/build/images/razor-bottom-yellow-7dbbe9ac.svg");
+    bottom: -40px;
+    background-position: top;
+    background-repeat: repeat-x;
+    content: "";
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    filter: grayscale(1) brightness(1.034);
+  }
   .container {
     max-width: 1200px;
     margin: auto;
@@ -38,7 +47,30 @@
     }
 
     .layer {
-      background-image: linear-gradient(90deg, #e6e9e9 28px, #fc012a 0, #fc012a calc(50% - 14px), #e6e9e9 calc(50% - 14px), #e6e9e9 calc(50% + 14px), #fc012a calc(50% + 14px), #fc012a calc(100% - 28px), #e6e9e9 calc(100% - 28px), #e6e9e9), linear-gradient(90deg, #e6e9e9 2px, #fc012a 0, #fc012a calc(50% - 1px), #e6e9e9 calc(50% - 1px), #e6e9e9 calc(50% + 1px), #fc012a calc(50% + 1px), #fc012a calc(100% - 2px), #e6e9e9 calc(100% - 2px), #e6e9e9);
+      background-image: linear-gradient(
+          90deg,
+          #000 28px,
+          transparent 0,
+          transparent calc(50% - 14px),
+          #000 calc(50% - 14px),
+          #000 calc(50% + 14px),
+          transparent calc(50% + 14px),
+          transparent calc(100% - 28px),
+          #000 calc(100% - 28px),
+          #000
+        ),
+        linear-gradient(
+          90deg,
+          #000 2px,
+          transparent 0,
+          transparent calc(50% - 1px),
+          #000 calc(50% - 1px),
+          #000 calc(50% + 1px),
+          transparent calc(50% + 1px),
+          transparent calc(100% - 2px),
+          #000 calc(100% - 2px),
+          #000
+        );
       background-repeat: no-repeat;
       background-size: 100% 2px, 100% 28px;
       height: 28px;
@@ -54,10 +86,10 @@
       padding: 30px 0px 50px;
 
       h1 {
-        color: #e6e9e9;
+        color: #000;
         font-family: "refinery";
 
-        font-size: 44px;
+        font-size: clamp(4rem, 5vw, 7rem);
         font-style: normal;
         font-weight: 700;
         line-height: 100%;
@@ -66,12 +98,14 @@
       }
 
       p {
-        color: #e6e9e9;
-        font-family: 'blender';
+        color: #000;
+        font-family: "blender";
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
         line-height: 120%;
+        max-width: 800px;
+        margin: auto;
         text-align: center;
       }
     }
@@ -99,7 +133,7 @@
 
         p {
           text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
-          color: white;
+          color: #000;
           font-size: 36px;
           font-family: "font-1";
           font-weight: 700;
@@ -118,6 +152,8 @@
         justify-content: center;
         position: relative;
         gap: 20px 0px;
+        border-right: 4px solid #000;
+        border-left: 4px solid #000;
 
         @include md {
           display: grid;
@@ -129,8 +165,6 @@
           flex-direction: column;
         }
 
-
-
         img {
           max-width: 274px;
           object-fit: cover;
@@ -139,7 +173,6 @@
           filter: grayscale(1);
           transition: all 0.6s ease-in-out;
           transform: scale(1);
-
 
           @include sm {
             width: 100%;
@@ -152,10 +185,10 @@
           overflow: hidden;
           transition: all 0.6s ease-out;
           cursor: pointer;
-          border-right: 4px solid white;
-          border-left: 4px solid white;
-          border-top: 8px solid white;
-          border-bottom: 8px solid white;
+          border-right: 4px solid #000;
+          border-left: 4px solid #000;
+          border-top: 8px solid #000;
+          border-bottom: 8px solid #000;
           align-items: center;
           justify-content: center;
 
@@ -203,17 +236,13 @@
                 width: 200px;
                 text-align: center;
                 color: #28e9e0;
-                font-weight: 700;
-
+                font-weight: 500;
               }
             }
           }
         }
-
       }
     }
-
-
   }
 
   .model {
@@ -226,6 +255,7 @@
     width: 100%;
     background: rgba(28, 0, 0, 0.439);
     transition: all 0.8s ease-out;
+    z-index: 1000;
 
     .cross {
       img {
@@ -246,7 +276,6 @@
           right: 12px;
         }
       }
-
     }
 
     .center {

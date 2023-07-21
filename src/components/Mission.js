@@ -6,13 +6,13 @@ import "../scss/mission.scss";
 const Mission = () => {
   const [tabs, setTabs] = useState("tab1");
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
   return (
     <>
       <section id="mission">
         <div className="container">
           <div className="start">
-            <div className="heading">MISSION BRIEFING</div>
+            <div className="heading" data-aos="fade-up">Our Mission</div>
 
             <div className="list">
               <ul>
@@ -21,45 +21,44 @@ const Mission = () => {
                   onClick={() => {
                     setTabs("tab1");
                   }}
+                  data-aos="fade-up"
                 >
-                  Objective{" "}
+                  Phase 1{" "}
                 </li>
                 <li
                   className={tabs === "tab2" ? "set" : null}
                   onClick={() => {
                     setTabs("tab2");
                   }}
+                  data-aos="fade-up"
                 >
-                  Abilities and gear
+                  Phase 2
                 </li>
                 <li
                   className={tabs === "tab3" ? "set" : null}
                   onClick={() => {
                     setTabs("tab3");
                   }}
+                  data-aos="fade-up"
                 >
-                  Abilities and gear
+                  Phase 3
                 </li>
               </ul>
               <span className="line"></span>
             </div>
           </div>
-          <div className="img-wrapper">
+          <div className="img-wrapper" data-aos="fade-up">
             {tabs === "tab1" && (
               <>
                 <div
                   className="img"
+                  data-aos="fade"
                   style={tabs === "tab1" ? { transform: "scale(1)" } : null}
                 >
                   <img src={m1} alt="" />
-                  <div className="para">
+                  <div className="para" data-aos="fade">
                     <p>
-                      Enter the shadowy world of spycraft and become —
-                      infiltrate high-security buildings, take out enemies, and
-                      go toe-to-toe against seasoned professionals. Espionage is
-                      a high-risk game, and failure isn’t an option. Choose your
-                      allies with care as you unravel the secrets at the heart
-                      of this expansion.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, debitis nesciunt totam fuga voluptatibus eius corrupti veritatis maxime itaque cumque! Velit, illum quibusdam atque magni, sunt odit optio asperiores laborum vel eligendi possimus quas et quasi esse nobis impedit modi!
                     </p>
                   </div>
                 </div>
@@ -69,16 +68,13 @@ const Mission = () => {
               <>
                 <div
                   className="img"
+                  data-aos="fade"
                   style={tabs === "tab2" ? { transform: "scale(1)" } : null}
                 >
-                  <img src={m2} alt="" />
-                  <div className="para">
+                  <img src={"https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"} alt="" />
+                  <div className="para" data-aos="fade">
                     <p>
-                      Watch your back in Dogtown, a ruined city-within-a-city
-                      ruled by. Its crumbling structures hold secrets and
-                      opportunities that can only be seized by those willing to
-                      do whatever it takes. Within its walls, discover
-                      high-octane gigs and quests with stakes like never before.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, debitis nesciunt totam fuga voluptatibus eius corrupti veritatis maxime itaque cumque! Velit, illum quibusdam atque magni, sunt odit optio asperiores laborum vel eligendi possimus quas et quasi esse nobis impedit modi!
                     </p>
                   </div>
                 </div>
@@ -88,16 +84,13 @@ const Mission = () => {
               <>
                 <div
                   className="img"
+                  data-aos="fade"
                   style={tabs === "tab3" ? { transform: "scale(1)" } : null}
                 >
-                  <img src={m3} alt="" />
-                  <div className="para">
+                  <img src={"https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"} alt="" />
+                  <div className="para" data-aos="fade">
                     <p>
-                      Power up with and craft a unique playstyle — use every new
-                      weapon and piece of cyberware at your disposal to survive
-                      in a fractured world of desperate hustlers, cunning
-                      netrunners, and ruthless mercenaries bent on profit and
-                      power.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, debitis nesciunt totam fuga voluptatibus eius corrupti veritatis maxime itaque cumque! Velit, illum quibusdam atque magni, sunt odit optio asperiores laborum vel eligendi possimus quas et quasi esse nobis impedit modi!
                     </p>
                   </div>
                 </div>

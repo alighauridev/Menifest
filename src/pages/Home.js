@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import Banner from "../components/Banner";
 
 import Footer from "../components/Footer";
+import Team from "../components/Team";
 
 import About from "../components/About";
 
@@ -28,7 +29,7 @@ const Home = () => {
           <MoreInfo />
           <Mission />
           <About />
-
+          <Team />
           {/* <MoreInfo />
           <Tokenomics />
 

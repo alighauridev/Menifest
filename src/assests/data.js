@@ -1,4 +1,4 @@
-import img1 from "../assests/p1.jpg";
+import img1 from "../assests/p  (2).jpg";
 import img2 from "../assests/p  (2).jpg";
 import img3 from "../assests/p  (3).jpg";
 
@@ -20,33 +20,42 @@ export const nav = [
     name: "CONTACT",
     path: "#contact",
   },
+  {
+    name: "MERCH",
+    path: "#contact",
+  },
 ];
-
 export const team = [
   {
     name: "Lucian Potlog",
     position: "Founder",
     desc: "A visually talented MF. The man who first drew the concept of these exceptional Shutter Bots along with Artmarketeer. He is an amazing artist who adapted his talents to the digital age by being a professional graphic designer for over 10 years. Even as a young child he would draw on walls, but now he draws inspiration from the walls as he changed profession pursuing photography full time. He is one of Ireland’s best known street photographers with a following of 20k across his channels.",
-    link: "https://linktr.ee/lucian.photography",
+    path: "https://www.nftshoweurope.com/wp-content/uploads/2023/01/rafa-garcia.webp",
   },
 
   {
     name: "Claudiu Potlog",
     position: "Artist",
     desc: "As a child he must have looked up to his older brother as he followed his footsteps into the life of an artist. Educated in the traditional sense he has a master’s in graphic design. Him and his brother created the art of the NFT collection together probably arguing like brothers do (only because they want the best possible art work) Although he is a master at digital art he still has a huge passion for traditional art with huge canvases across his house that he painted. Most kids played with Lego these two played with pencils.",
-    link: "https://linktr.ee/claudesign.art",
+    path: "https://www.nftshoweurope.com/wp-content/uploads/2023/01/seung-yoo.webp",
   },
   {
     name: "Conor D’Arcy",
     position: "Artist",
     desc: "Visually unstable but visually passionate. A self-taught filmmaker who loves creating stories. Working freelance for over 3 years making the types of adverts that not all brands can use because they are a little unhinged. He has worked with many start- ups always making sure to be as fun as he is professional. A little bit weird but aren’t we all.",
-    link: "https://linktr.ee/codarcfilm",
+    path: "https://www.nftshoweurope.com/wp-content/uploads/2022/10/sam-hamilton-1.webp",
   },
   {
     name: "Karlo Turić",
     position: "Social Media Manager",
     desc: "This man makes Joe exotic look like an accountant. A lover of all exotic creatures and an expert in the NFT space. Karlo is an expert in the NFT space and with social media marketing, amassing over 150k across his channels. He is experienced in design, social media and discord management. Running a successful print on demand business for 3 years now. Actively trading and working in the NFT space. Experienced in design, social media and discord management.",
-    link: "https://linktr.ee/exotickarlo",
+    path: "https://www.nftshoweurope.com/wp-content/uploads/2022/10/pablo-alpe.webp",
+  },
+  {
+    name: "Karlo Turić",
+    position: "Social Media Manager",
+    desc: "This man makes Joe exotic look like an accountant. A lover of all exotic creatures and an expert in the NFT space. Karlo is an expert in the NFT space and with social media marketing, amassing over 150k across his channels. He is experienced in design, social media and discord management. Running a successful print on demand business for 3 years now. Actively trading and working in the NFT space. Experienced in design, social media and discord management.",
+    path: "https://www.nftshoweurope.com/wp-content/uploads/2023/07/al-crego.png",
   },
 ];
 

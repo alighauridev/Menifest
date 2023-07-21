@@ -3,7 +3,7 @@
 
 #footer {
   position: relative;
-  background-color: #fc012a;
+  // background-color: #fc012a;
 
   .container {
     max-width: 1200px;
@@ -18,7 +18,7 @@
     p {
       font-size: 18px;
       font-weight: 300;
-      font-family: 'blender';
+      font-family: "blender";
       color: #e6e9e9;
       text-align: center;
     }
@@ -27,13 +27,12 @@
       color: #e6e9e9;
 
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 300;
       position: relative;
       text-decoration: none;
-      font-family: 'blender';
+      font-family: "blender";
       letter-spacing: 2px;
     }
-
 
     .icons {
       display: flex;
@@ -47,9 +46,9 @@
 
       h2 {
         color: #e6e9e9;
-        font-weight: 700;
+        font-weight: 300;
         position: relative;
-        font-family: 'blender';
+        font-family: "blender";
         font-size: 18px;
       }
 
@@ -81,7 +80,6 @@
             filter: invert(1);
           }
         }
-
       }
     }
 
@@ -104,13 +102,11 @@
 
         a {
           color: #e6e9e9;
-          font-weight: 700;
+          font-weight: 400;
           position: relative;
-          font-family: 'blender';
-
+          font-family: "blender";
           font-size: 18px;
         }
-
       }
     }
   }

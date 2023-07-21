@@ -33,7 +33,6 @@
   color: #0f0f0f;
 }
 
-
 body::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
@@ -121,7 +120,6 @@ button.owl-next span {
   background: none;
   border: 1px solid black;
 }
-
 
 .owl-theme .owl-dots .owl-dot {
   width: 30px;

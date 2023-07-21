@@ -3,7 +3,7 @@ import "../scss/banner.scss";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import bannerImg from "../assests/7.jpg";
 import btn1 from "../assests/btn-bac.svg";
-import video from "../assests/Video/file.mp4"
+import video from "../assests/Video/spacecraft_-_82659 (540p).mp4"
 const Banner = () => {
   const imageRef = useRef(null);
 
@@ -38,14 +38,14 @@ const Banner = () => {
         {/* <img src={bannerImg} style={{ width: "100%" }} alt="" /> */}
         <section id="banner">
 
-        <video src={video}  muted autoPlay loop />          <div className="container">
+          <video src={video} muted autoPlay loop />          <div className="container">
             <div className="heading">
-              <h1>PHANTOM LIBERTY COMING SEPTEMBER 26, 2023</h1>
+              <h1>MANIFEST LABS COMING SEPTEMBER 26, 2023</h1>
             </div>
             <div className="content">
               <a href="#" target="blank_">
                 <img src={btn1} alt="" />
-                <span>PRE-ORDER NOW</span>
+                <span>ORDER NOW</span>
               </a>
               <a href="#" target="blank_">
                 <img src={btn1} alt="" />

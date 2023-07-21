@@ -11,7 +11,7 @@
   position: relative;
   z-index: 1;
   background-color: transparent !important;
-  padding: 0 20px 40px 40px;
+  padding: 80px 20px 40px 40px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -20,8 +20,36 @@
   background-repeat: repeat-x;
 
   background-position: bottom center;
-  background-image: url('../assests/bac-main.png');
+  background-image: url("../assests/bac-main.png");
+  position: relative;
 
+  background-position: top 40px center, top;
+  background-repeat: repeat-x, repeat;
+  background-image: url("https://www.cyberpunk.net/build/images/noise-gradient-af9cb7ed.png"),
+    url("../assests/noise-pattern-90c709f6.png");
+  background-position: top, top 440px center;
+  background-repeat: repeat-x, repeat-x;
+
+  height: 440px;
+  margin-top: -119px;
+  &:before {
+    background-image: url("../assests/bac-main.png");
+
+    background-position: top center;
+    top: 50px;
+    background-repeat: repeat-x;
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity 3s;
+    width: 100%;
+    z-index: 1;
+    background-size: 70px;
+    left: 0px;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -37,7 +65,14 @@
     padding: 50px 20px;
     row-gap: 20px;
     align-items: center;
-    background: linear-gradient(90deg, #28e9e0 2px, transparent 0) 0 0, linear-gradient(90deg, #28e9e0 2px, transparent 0) 0 100%, linear-gradient(270deg, #28e9e0 2px, transparent 0) 100% 0, linear-gradient(270deg, #28e9e0 2px, transparent 0) 100% 100%, linear-gradient(180deg, #28e9e0 2px, transparent 0) 0 0, linear-gradient(180deg, #28e9e0 2px, transparent 0) 100% 0, linear-gradient(0deg, #28e9e0 2px, transparent 0) 0 100%, linear-gradient(0deg, #28e9e0 2px, transparent 0) 100% 100%;
+    background: linear-gradient(90deg, #28e9e0 2px, transparent 0) 0 0,
+      linear-gradient(90deg, #28e9e0 2px, transparent 0) 0 100%,
+      linear-gradient(270deg, #28e9e0 2px, transparent 0) 100% 0,
+      linear-gradient(270deg, #28e9e0 2px, transparent 0) 100% 100%,
+      linear-gradient(180deg, #28e9e0 2px, transparent 0) 0 0,
+      linear-gradient(180deg, #28e9e0 2px, transparent 0) 100% 0,
+      linear-gradient(0deg, #28e9e0 2px, transparent 0) 0 100%,
+      linear-gradient(0deg, #28e9e0 2px, transparent 0) 100% 100%;
     background-repeat: no-repeat;
     background-size: 28px 28px;
     border-bottom: 2px solid #28e9e01a;
@@ -47,7 +82,7 @@
       h1 {
         color: #28e9e0;
         font-family: "refinery";
-        font-size: 44px;
+        font-size: clamp(4rem, 5vw, 7rem);
         font-style: normal;
         font-weight: 700;
         line-height: 100%;
@@ -60,12 +95,12 @@
       max-width: 700px;
 
       p {
-        font-family: 'blender';
-        font-size: 22px;
+        font-family: "blender";
+        font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: 120%;
-        color: white;
+        color: #e6e9e9;
         text-align: center;
       }
     }

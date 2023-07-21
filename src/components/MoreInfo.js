@@ -6,18 +6,13 @@ const MoreInfo = () => {
     <>
       <section id="section-2">
         <div className="container">
-          <div className="heading">
-            <h1>FREEDOM ALWAYS COMES AT A PRICE</h1>
+          <div className="heading" >
+            <h1 data-aos="fade-up">WHAT WE ARE?</h1>
           </div>
 
-          <div className="para">
+          <div className="para" data-aos="fade-up">
             <p>
-              Phantom Liberty is a new spy-thriller adventure for Cyberpunk
-              2077. Return as cyber-enhanced mercenary V and embark on a
-              high-stakes mission of espionage and intrigue to save the NUS
-              President. In the dangerous district of Dogtown, you must forge
-              alliances within a web of shattered loyalties and sinister
-              political machinations. Do you have what it takes to survive?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quas nihil, consequuntur natus ipsam cum aut ipsa quisquam architecto! Magnam libero ab, nostrum illum nisi unde a explicabo quos, dolorum recusandae dolorem distinctio, eos voluptatem? Debitis vitae numquam praesentium. Iusto suscipit asperiores amet velit fuga rem commodi illum, corrupti aspernatur!
             </p>
           </div>
         </div>

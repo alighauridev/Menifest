@@ -45,8 +45,9 @@
 body {
   overflow-x: hidden;
   height: 100%;
-  /* background-color: black; */
   position: relative;
+  background-image: url("../assests/bac-main.png"),
+    url("../assests/noise-pattern-90c709f6.png");
 }
 
 .App {

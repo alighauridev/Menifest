@@ -29,8 +29,8 @@ const Footer = () => {
               <a href="#">Terms of Use & Privacy Policy </a>
               <a href="#">Careers</a>
               <a href="#">User agreement</a>
-              <a href="#">Fan Content Guidelines</a>
-              <a href="#">REDmod</a>
+              <a href="#"> Guidelines</a>
+              {/* <a href="#">REDmod</a> */}
             </ul>
           </div>
 
@@ -46,9 +46,9 @@ const Footer = () => {
               <a href="#">
                 <img src={icon3} alt="" />
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={icon4} alt="" />
-              </a>
+              </a> */}
               <a href="#">
                 <img src={icon5} alt="" />
               </a>
@@ -56,11 +56,9 @@ const Footer = () => {
           </div>
 
           <p style={{ maxWidth: "600px" }}>
-            $PTA is a meme coin with no intrinsic value or expectation of
-            financial return. There is no formal team or roadmap. the coin is
-            completely useless and for entertainment purposes only.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur libero exercitationem voluptas ut velit, commodi asperiores ipsa dolorem doloremque magni neque hic error temporibus repudiandae debitis cupiditate suscipit tempore?
           </p>
-          <span>© 2023 by PTA. All rights reserved!</span>
+          <span>© 2023 by MANIFEST L. All rights reserved!</span>
         </div>
       </footer>
     </>
