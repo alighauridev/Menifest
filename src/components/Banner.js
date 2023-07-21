@@ -45,12 +45,12 @@ const Banner = () => {
             <div className="content">
               <a href="#" target="blank_">
                 <img src={btn1} alt="" />
-                <span>ORDER NOW</span>
+                <span>Make INQUIRY</span>
               </a>
               <a href="#" target="blank_">
                 <img src={btn1} alt="" />
 
-                <span> WATCH TRAILER</span>
+                <span> CONTENT CREATORS</span>
               </a>
             </div>
           </div>

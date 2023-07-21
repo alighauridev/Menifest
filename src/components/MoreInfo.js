@@ -7,7 +7,7 @@ const MoreInfo = () => {
       <section id="section-2">
         <div className="container">
           <div className="heading" >
-            <h1 data-aos="fade-up">WHAT WE ARE?</h1>
+            <h1 data-aos="fade-up">WHO WE ARE??</h1>
           </div>
 
           <div className="para" data-aos="fade-up">

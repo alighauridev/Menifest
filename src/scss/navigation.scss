@@ -6,12 +6,24 @@ html {
 }
 
 header {
-  width: 100%;
-  transition: 0.3s all;
   position: fixed;
-  top: 0px;
+  top: 0;
+  transition: all 0.3s;
+  width: 100%;
   z-index: 11;
-
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.65), transparent);
+  &::before {
+    content: "";
+    display: block;
+    height: 112px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.2s;
+    width: 100%;
+    will-change: opacity;
+  }
   .outer {
     position: relative;
 

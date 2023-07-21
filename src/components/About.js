@@ -13,7 +13,7 @@ const About = () => {
       <section id="about">
         <div className="container">
           <div className="heading">
-            <h1 data-aos="fade-up">WELCOME TO THE MANIFEST LABS</h1>
+            <h1 data-aos="fade-up">WELCOME TO THE MANIFEST LABS</h1>
             <p data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eaque voluptates soluta, veritatis voluptatum dolore. Necessitatibus quisquam eligendi accusamus deserunt cum, vero debitis quae repudiandae tenetur quas nemo ea eius?
             </p>
