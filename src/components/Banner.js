@@ -1,12 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../scss/banner.scss";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import bannerImg from "../assests/7.jpg";
 import btn1 from "../assests/btn-bac.svg";
-import video from "../assests/Video/spacecraft_-_82659 (540p).mp4"
+import video from "../assests/Video/Animation.mp4"
+import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
+import InquiryForm from "./InquiryForm";
 const Banner = () => {
   const imageRef = useRef(null);
-
+  const [creatorsForm, setCreatorsForm] = useState(false)
+  const [inquiryFormShow, setInquiryFormShow] = useState(false)
   useEffect(() => {
     const handleScroll = () => {
       if (imageRef.current) {
@@ -40,22 +44,28 @@ const Banner = () => {
 
           <video src={video} muted autoPlay loop />          <div className="container">
             <div className="heading">
-              <h1>MANIFEST LABS COMING SEPTEMBER 26, 2023</h1>
+              <h1>WELCOME TO MANIFEST LABS</h1>
             </div>
             <div className="content">
-              <a href="#" target="blank_">
+              <Link to="/" onClick={() => setInquiryFormShow(true)} >
                 <img src={btn1} alt="" />
-                <span>Make INQUIRY</span>
-              </a>
-              <a href="#" target="blank_">
+                <span>INCUBATOR PROGRAM</span>
+              </Link>
+              <Link to="/" onClick={() => setCreatorsForm(true)}>
                 <img src={btn1} alt="" />
 
                 <span> CONTENT CREATORS</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
       </div>
+      {
+        creatorsForm && <ContactForm setCreatorsForm={setCreatorsForm} />
+      }
+      {
+        inquiryFormShow && <InquiryForm setInquiryFormShow={setInquiryFormShow} />
+      }
     </>
   );
 };

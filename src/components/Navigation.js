@@ -54,7 +54,7 @@ const Navigation = () => {
                     );
                   })}
                 </ul>
-                <div className="btn">BUY NOW</div>
+                <div className="btn">AFFILIATES</div>
               </nav>
               <div className="nav__btns">
                 <i onClick={() => barBtn()} className="bars">

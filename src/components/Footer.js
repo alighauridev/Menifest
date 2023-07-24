@@ -58,7 +58,7 @@ const Footer = () => {
           <p style={{ maxWidth: "600px" }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur libero exercitationem voluptas ut velit, commodi asperiores ipsa dolorem doloremque magni neque hic error temporibus repudiandae debitis cupiditate suscipit tempore?
           </p>
-          <span>© 2023 by MANIFEST L. All rights reserved!</span>
+          <span>© 2023 by MANIFEST LABS. All rights reserved!</span>
         </div>
       </footer>
     </>

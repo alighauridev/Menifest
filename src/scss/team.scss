@@ -2,12 +2,12 @@
 @import "./media.scss";
 
 .team {
-  padding: 140px 0 140px;
-  position: relative;
   background-image: url("../assests/bac-main.png"),
     url("../assests/noise-pattern-90c709f6.png");
-  background-position: top -407px center, top;
-  background-repeat: repeat-x, repeat;
+  padding: 140px 0 140px;
+  position: relative;
+
+  background-position: bottom -407px center, bottom;
   background-size: 70px;
   background-repeat: repeat-x, repeat;
   overflow: hidden;

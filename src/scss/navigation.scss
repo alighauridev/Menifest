@@ -340,17 +340,17 @@ header {
 
   > i {
     width: 50px;
-    background: white;
+    background: black;
     height: 50px;
     display: grid;
     place-content: center;
     border-radius: 100px;
-    box-shadow: #111111 0px 2px 6px, inset 0 0 23px #0000004d;
     pointer-events: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #363434;
+    color: #28e9e0;
+    border: 2px solid #28e9e0;
 
     svg {
       font-size: 3rem;

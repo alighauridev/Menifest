@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./scss/style.css";
+import Navigation from "./components/Navigation";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   let [loading, setLoading] = useState(true);
@@ -17,6 +20,12 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<>
+          <Navigation />
+          <ContactForm />
+          <Footer />
+
+        </>} />
       </Routes>
     </div>
   );

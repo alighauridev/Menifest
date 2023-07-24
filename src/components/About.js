@@ -13,9 +13,10 @@ const About = () => {
       <section id="about">
         <div className="container">
           <div className="heading">
-            <h1 data-aos="fade-up">WELCOME TO THE MANIFEST LABS</h1>
+            <h1 data-aos="fade-up">PROJECTS</h1>
             <p data-aos="fade-up">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eaque voluptates soluta, veritatis voluptatum dolore. Necessitatibus quisquam eligendi accusamus deserunt cum, vero debitis quae repudiandae tenetur quas nemo ea eius?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              eaque voluptates soluta, veritatis voluptatum dolore.
             </p>
           </div>
           <div className="content">
@@ -23,8 +24,6 @@ const About = () => {
 
             <div className="imges" data-aos="fade-up">
               {images.map((e) => {
-                // console.log(e);
-
                 return (
                   <>
                     <div
@@ -46,8 +45,8 @@ const About = () => {
               })}
             </div>
             <div className="layer"></div>
-          </div >
-        </div >
+          </div>
+        </div>
 
         <div
           className="model"
@@ -56,22 +55,24 @@ const About = () => {
             setActive(false);
           }}
         >
-          <div
-            className="cross"
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            <img src="/images/bb (2).png" alt="" />
-          </div>
-          <div className="center">
+
+          <div className="center" data-aos={'fade-up'} data-aos-duration="300">
+            <div
+              className="cross"
+              onClick={() => {
+                setActive(false);
+              }}
+            >
+              <img src="/images/bb (2).png" alt="" />
+            </div>
             <img src={active} alt="" />
             <div className="upper">
-              {/* <div className="btn">{e.btn}</div> */}
+              <h2>About this project</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint minima ducimus porro nulla perferendis deleniti magnam nihil, quis sit laborum, quaerat eius perspiciatis hic ad quos temporibus. Accusantium, esse modi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab officia suscipit accusantium expedita dolorum qui. Distinctio, at esse iste deleniti, aspernatur quidem, eum maxime ullam quos harum ut. Rem, perspiciatis?</p>
             </div>
           </div>
         </div>
-      </section >
+      </section>
     </>
   );
 };

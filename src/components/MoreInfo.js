@@ -5,16 +5,19 @@ const MoreInfo = () => {
   return (
     <>
       <section id="section-2">
-        <div className="container">
-          <div className="heading" >
-            <h1 data-aos="fade-up">WHO WE ARE??</h1>
+        <div className="wrapper">
+          <div className="container">
+            <div className="heading" >
+              <h1 data-aos="fade-up">WHO WE ARE??</h1>
+            </div>
+
+            <div className="para" data-aos="fade-up">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quas nihil, consequuntur natus ipsam cum aut ipsa quisquam architecto! Magnam libero ab, nostrum illum nisi unde a explicabo quos, dolorum recusandae dolorem distinctio, eos voluptatem? Debitis vitae numquam praesentium. Iusto suscipit asperiores amet velit fuga rem commodi illum, corrupti aspernatur!
+              </p>
+            </div>
           </div>
 
-          <div className="para" data-aos="fade-up">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quas nihil, consequuntur natus ipsam cum aut ipsa quisquam architecto! Magnam libero ab, nostrum illum nisi unde a explicabo quos, dolorum recusandae dolorem distinctio, eos voluptatem? Debitis vitae numquam praesentium. Iusto suscipit asperiores amet velit fuga rem commodi illum, corrupti aspernatur!
-            </p>
-          </div>
         </div>
       </section>
     </>

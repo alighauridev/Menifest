@@ -1,4 +1,4 @@
-import img1 from "../assests/p  (2).jpg";
+import img1 from "../assests/p1.jpg";
 import img2 from "../assests/p  (2).jpg";
 import img3 from "../assests/p  (3).jpg";
 
@@ -148,7 +148,7 @@ export const FAQ = [
 
 export const images = [
   { img: img1, btn: "OWLPHA" },
-  { img: img2, btn: "GALACTIC EAGLE GANG" },
+  { img: img2, btn: " EAGLE GANG" },
   { img: img3, btn: "RING RUNNERZ" },
-  { img: img1, btn: "BOMBACLOT" },
+  // { img: img1, btn: "BOMBACLOT" },
 ];

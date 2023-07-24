@@ -27,8 +27,8 @@ const Home = () => {
           </div>
           <Banner />
           <MoreInfo />
-          <Mission />
           <About />
+          <Mission />
           <Team />
           {/* <MoreInfo />
           <Tokenomics />
