@@ -211,7 +211,7 @@
         color: #cccccc;
 
         &:focus {
-          border: 1px solid #00f0ff;
+          border: 1px solid #e6e6e6;
           box-shadow: 0 0 5px #0085ff2e;
         }
       }
@@ -233,7 +233,7 @@
         max-height: 120px;
         resize: none;
         &:focus {
-          border: 1px solid #00f0ff;
+          border: 1px solid #e6e6e6;
           box-shadow: 0 0 5px #0085ff2e;
         }
       }

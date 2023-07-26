@@ -44,7 +44,7 @@ const Banner = () => {
 
           <video src={video} muted autoPlay loop />          <div className="container">
             <div className="heading">
-              <h1>WELCOME TO MANIFEST LABS</h1>
+              <h1 style={{ opacity: 0 }}>WELCOME TO MANIFEST LABS</h1>
             </div>
             <div className="content">
               <Link to="/" onClick={() => setInquiryFormShow(true)} >
